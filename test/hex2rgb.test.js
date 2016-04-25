@@ -13,7 +13,7 @@ describe.only("hex2rgb", function () {
       hex2rgb.convert("#ffffff", function (err, result) {
 
         expect(hex2rgb.parse.calledOnce).to.be.true;
-        expect(hex2rgb.parse.args[0][0]).to.have.length(5);
+        expect(hex2rgb.parse.args[0][0]).to.have.length(7);
 
         hex2rgb.parse.restore();
         done();
